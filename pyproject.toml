@@ -39,3 +39,7 @@ select = [
     "TRY",	# tryceratops
     "RUF",	# Ruff-specificrules
 ]
+
+ignore = [
+    "PLR2004",
+]

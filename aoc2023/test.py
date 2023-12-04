@@ -1,5 +1,4 @@
 import importlib
-import traceback
 from argparse import ArgumentParser
 
 import rich
@@ -35,8 +34,10 @@ def test_cli() -> None:
             module.test1()
         else:
             module.test2()
-    except AssertionError as err:
-        assertion = traceback.extract_tb(err.__traceback__)[-1].line
-        rich.print(f"[red]Test Failed: [/red]{assertion}")
+    except AssertionError:
+        rich.print("[red]❌ Test Failed.[/red]")
+        return
+
+    rich.print("[green]✅ Test Passed.[/green]")
 
 

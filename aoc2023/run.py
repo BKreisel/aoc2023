@@ -35,6 +35,8 @@ def run_cli() -> None:
 
     rich.print(f"🎄 Running Day {args.day:02} Part {args.part}:")
     if args.part == 1:
-        module.part1(data)
+        result = module.part1(data)
     else:
-        module.part2(data)
+        result = module.part2(data)
+
+    rich.print(f"[green]Result:[/green] {result}")

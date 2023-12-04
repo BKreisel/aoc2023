@@ -1,10 +1,10 @@
 TEMPLATE = """\""" Day {day:02}\"""
 
-def part1(input: str) -> None:
+def part1(data: str) -> int:
     \"""Run part 1 of day {day:02}.\"""
     pass
 
-def part2(input: str) -> None:
+def part2(data: str) -> int:
     \"""Run part 2 of day {day:02}.\"""
     pass
 
